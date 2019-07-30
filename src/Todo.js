@@ -14,7 +14,7 @@ class Todo extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleUpdate = this.handleUpdate.bind(this);
     }
-        
+
     toggleForm() {
         this.setState({ isEditing: !this.state.isEditing });
     }
@@ -27,6 +27,7 @@ class Todo extends Component {
         this.setState({ isEditing: false });
     }
     handleChange(evt) {
+
         this.setState({
             [evt.target.name]: evt.target.value
         });
